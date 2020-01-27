@@ -18,6 +18,6 @@ with app.test_request_context():
     print(url_for('login',next='/'))
     print(url_for('profile',username = 'lei'))
 
-# if __name__ == '__main__':
-#     app.run(port=5005)
+if __name__ == '__main__':
+    app.run(port=5005)
 
