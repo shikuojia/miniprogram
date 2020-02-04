@@ -1,4 +1,4 @@
-SQLALCHEMY_DATABASE_URI = 'mysql://root:hepshilei@127.0.0.1:3900/mysql'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:hepshilei@127.0.0.1:3900/food_db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 DEBUG = True
 SQLALCHEMY_ECHO = True
