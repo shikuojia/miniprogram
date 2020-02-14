@@ -138,6 +138,20 @@ var common_ops = {
         $('html, body').animate({
             scrollTop: target.offset().top - 10
         }, 100);
+    },
+    buildUrl:function(path,params){
+        var url = '' + path;
+        var _ParamsUrl = '';
+
+        if(params){
+            _ParamsUrl = Object.keys(params).map(function(k){
+                return [encodeURIComponent(k),encodeURIComponent(params[k])].join('=');
+            }).join('&');
+            _ParamsUrl = '?' + _ParamsUrl
+
+        }
+        return url + _ParamsUrl;
+        
     }
 };
 

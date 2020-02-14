@@ -2,3 +2,4 @@ flask
 flask-alchemy
 mysqlclient
 flask-script
+flask-sqlacodegen
