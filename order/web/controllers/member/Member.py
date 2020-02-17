@@ -1,27 +1,28 @@
-from flask import Blueprint,render_template
+from flask import Blueprint
+from common.libs.user.helper import g_render_template
 from application import app
 
 route_member = Blueprint('member_page',__name__)
 
 @route_member.route('/index')
 def index():
-    return render_template('member/index.html')
+    return g_render_template('member/index.html')
 
 
 
 @route_member.route('/comment')
 def comment():
-    return render_template('member/comment.html')
+    return g_render_template('member/comment.html')
 
 
 
 @route_member.route('/info')
 def info():
-    return render_template('member/info.html')
+    return g_render_template('member/info.html')
 
 
 
 @route_member.route('/set')
 def set():
-    return render_template('member/set.html')
+    return g_render_template('member/set.html')
     

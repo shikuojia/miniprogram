@@ -1,5 +1,5 @@
 from application import app
-from flask import request,redirect
+from flask import request,redirect,g
 from common.modules.User import User
 from common.libs.user.UserService import UserService
 from common.libs.UrlManager import UrlManager
@@ -19,7 +19,9 @@ def before_request():
         return
 
     user_info = check_login()
-
+    g.current_user = None
+    if user_info:
+        g.current_user = user_info
     pattern = re.compile('{}'.format('|'.join(ignore_urls)))
   
     if pattern.match(path):
