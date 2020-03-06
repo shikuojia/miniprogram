@@ -1,5 +1,5 @@
 flask
-flask-alchemy
+flask-sqlalchemy
 mysqlclient
 flask-script
 flask-sqlacodegen

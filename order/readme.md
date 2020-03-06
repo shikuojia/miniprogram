@@ -1,3 +1,3 @@
 #StartServer
-export ops_config=local | production 
-python manmage.py runserver
+export progarm_config=local | production 
+python manmager.py runserver
